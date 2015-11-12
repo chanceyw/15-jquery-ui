@@ -2,6 +2,7 @@
 @import "neat";
 @import "mixins";
 @import "normalize";
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import "font-awesome";
 
 
@@ -10,18 +11,17 @@ li {
 }
 
 .accordion {
-  width: 300px;
-  background-color: yellow;
-  padding: 0;
-  margin: 0;
-  border: solid grey 3px;
+display: flex;
+flex-direction: column;
+list-style: none;
+padding-left: none;
+border: solid grey 3px;
+width: 400px;
+
 }
 
 .accordion__bar {
-  text-align: left;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  border-bottom: solid grey 2px;
+padding: 10px;
 }
 
 .accordion__bar span {
