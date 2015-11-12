@@ -1,9 +1,10 @@
-@import "bourbon";
-@import "neat";
-@import "mixins";
-@import "normalize";
-$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
-@import "font-awesome";
+$brand_dark_grey: #5B5D62;
+$brand_light_grey: #E5E5E5;
+$brand_inner_text: #797979;
+$brand_white: #F7F7F7;
+$brand_dark_dark_grey: #404247;
+$brand_green: #94AD46;
+$brand_border_grey: #444445;
 
 
 .accordion {
@@ -15,6 +16,7 @@ border: solid grey 3px;
 width: 400px;
 margin-bottom: 0;
 margin-top: 0;
+
 
 }
 
@@ -29,6 +31,9 @@ margin-top: 0;
 
 .accordion__bar-list {
   padding-left: 0;
+  background: $brand_light_grey;
+  color: $brand_inner_text;
+  display: none;
 }
 
 .number-right {
@@ -53,12 +58,24 @@ margin-top: 0;
   border-radius: 10px;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: $brand_dark_dark_grey;
 }
+
+.accordion__bar:hover {
+background-color: $brand_green;
+ color: $brand_dark_grey;
+}
+.accordion__bar:hover span {
+
+ color: $brand_white;
+}
+
 
 .accordion__bar .fa {
   float: left;
   padding-right: 10px;
   padding-left: 10px;
+
 
 }
 .accordion__bar{
@@ -66,4 +83,6 @@ margin-top: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
+  color: $brand_white;
+  background-color: $brand_dark_grey;
 }
