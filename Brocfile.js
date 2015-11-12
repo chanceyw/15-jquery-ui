@@ -9,6 +9,6 @@ var stylePaths = [
   'bower_components/font-awesome/scss',
 ];
 
-var styles = new Sass(stylePaths, 'accordian.scss', 'accordian.css');
+var styles = new Sass(stylePaths, 'accordian.scss', 'app.css');
 
 module.exports = new Merge(['public', styles, 'bower_components/font-awesome/fonts'], {overwrite: true});
