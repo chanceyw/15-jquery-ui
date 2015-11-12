@@ -2,7 +2,6 @@
 @import "neat";
 @import "mixins";
 @import "normalize";
-$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import "font-awesome";
 
 
@@ -15,9 +14,26 @@ li {
   background-color: yellow;
   padding: 0;
   margin: 0;
+  border: solid grey 3px;
 }
 
 .accordion__bar {
-  float: left;
+  text-align: left;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  border-bottom: solid grey 2px;
+}
+
+.accordion__bar span {
+  float: right;
   margin: 0;
+  padding-right: 10px;
+}
+
+.accordion__bar-list  span {
+
+}
+
+.accordion__bar-list li {
+
 }
