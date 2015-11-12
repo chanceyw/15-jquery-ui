@@ -6,10 +6,18 @@ $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts";
 @import "font-awesome";
 
 
-html {
-  background-color: blue;
+li {
+  list-style: none;
 }
 
-body {
-  font-size: 40px;
+.accordion {
+  width: 300px;
+  background-color: yellow;
+  padding: 0;
+  margin: 0;
+}
+
+.accordion__bar {
+  float: left;
+  margin: 0;
 }
