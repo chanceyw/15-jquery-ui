@@ -7,7 +7,7 @@
   });
 };
 
- $ (`.accordion__bar`).click(function() {
+$(`.accordion__bar`).click(function() {
   $(`.accordion__bar-list`).slideUp();
   $(this).next(`accordian__bar-list-a`).slideToggle;
 });

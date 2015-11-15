@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="app.css">
-    <title>keyboard project</title>
+    <title>keyboard</title>
   </head>
   <body>
-    <textarea id="inputtext" rows="15" cols="90"></textarea>
+    <textarea id="write" rows="15" cols="90"></textarea>
 <div class="keyboard">
   <ul class="keyboard-row">
     <li class="keyboard-button">`</li>
@@ -74,5 +74,13 @@
     <li class="keyboard-button_space">space</li>
     </ul>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
+<script src="/jquery.js"></script>
+<script src="app.js"></script>
+<script>
+ require(['keyboard'], function(keyboard) {
+  keyboard();
+ });
+</script>
   </body>
 </html>
