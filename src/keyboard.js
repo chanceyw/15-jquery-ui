@@ -1,10 +1,34 @@
-$(function() {
-  var $write = $('#write'),
+//globals $
+  export default function() {
+    var enter = $(`#write`);
 
-    $(`.keyboard-row li`).click(function() {
-      var $this = $(this),
-        character = $this.html();
+    $(`.keyboard-row .keyboard-button`).click(function() {
+      var char = $(this).html();
 
-      $write.html($write.html() + character);
+      enter.html(enter.html() + char);
     });
-});
+
+    $(`.keyboard-row .keyboard-button_tab`).click(function() {
+      var char = `\t`;
+
+      enter.html(enter.html() + char);
+    });
+
+    $(`.keyboard-row .keyboard-button_space`).click(function() {
+      var char = ` `;
+
+      enter.html(enter.html() + char);
+    });
+
+    $(`.keyboard-row .keyboard-button_return`).click(function() {
+      var char = `\n`;
+
+      enter.html(enter.html() + char);
+    });
+
+    $(`.keyboard-row .keyboard-button_delete`).click(function() {
+      var char = `a`;
+
+      enter.html(enter.html() - char);
+    });
+}
