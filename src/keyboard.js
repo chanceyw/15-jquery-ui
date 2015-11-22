@@ -27,8 +27,9 @@
     });
 
     $(`.keyboard-row .keyboard-button_delete`).click(function() {
-      var char = `a`;
+      var html = enter.html();
 
-      enter.html(enter.html() - char);
+      enter.html(html.substr(0, html.length - 1));
+
     });
 }
