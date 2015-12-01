@@ -1,13 +1,8 @@
  export default function() {
   var btn = $('.accordion__bar');
-  var list = $('.accordion__bar-list');
 
   btn.on('click', function() {
-    $(this).next(list).slideToggle();
+    $(this).parent().siblings().find(`.accordion__bar-list`).slideUp();
+    $(this).siblings().slideToggle();
   });
 };
-
-$(`.accordion__bar`).click(function() {
-  $(`.accordion__bar-list`).slideUp();
-  $(this).next(`accordian__bar-list-a`).slideToggle;
-});
