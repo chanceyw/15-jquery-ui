@@ -1,0 +1,88 @@
+$brand_dark_grey: #5B5D62;
+$brand_light_grey: #E5E5E5;
+$brand_inner_text: #797979;
+$brand_white: #F7F7F7;
+$brand_dark_dark_grey: #404247;
+$brand_green: #94AD46;
+$brand_border_grey: #444445;
+
+
+.accordion {
+display: flex;
+flex-direction: column;
+list-style: none;
+padding-left: 0;
+border: solid grey 3px;
+width: 400px;
+margin-bottom: 0;
+margin-top: 0;
+
+
+}
+
+.accordian__bar-list-a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+  padding-left: 0;
+  flex: 1;
+  border: solid grey 1px;
+}
+
+.accordion__bar-list {
+  padding-left: 0;
+  background: $brand_light_grey;
+  color: $brand_inner_text;
+  display: none;
+}
+
+.number-right {
+  float: right;
+  margin-right: 20px;
+  border: solid grey 1px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.number-left{
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.accordion__bar span {
+  float: right;
+  margin-right: 20px;
+  border: solid grey 1px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $brand_dark_dark_grey;
+}
+
+.accordion__bar:hover {
+background-color: $brand_green;
+ color: $brand_dark_grey;
+}
+.accordion__bar:hover span {
+
+ color: $brand_white;
+}
+
+
+.accordion__bar .fa {
+  float: left;
+  padding-right: 10px;
+  padding-left: 10px;
+
+
+}
+.accordion__bar{
+  border: solid grey 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 0;
+  color: $brand_white;
+  background-color: $brand_dark_grey;
+}

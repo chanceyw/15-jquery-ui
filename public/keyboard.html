@@ -2,9 +2,85 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>keyboard project</title>
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="app.css">
+    <title>keyboard</title>
   </head>
   <body>
-
+    <textarea id="write" rows="15" cols="90"></textarea>
+<div class="keyboard">
+  <ul class="keyboard-row">
+    <li class="keyboard-button">`</li>
+    <li class="keyboard-button">1</li>
+    <li class="keyboard-button">2</li>
+    <li class="keyboard-button">3</li>
+    <li class="keyboard-button">4</li>
+    <li class="keyboard-button">5</li>
+    <li class="keyboard-button">6</li>
+    <li class="keyboard-button">7</li>
+    <li class="keyboard-button">8</li>
+    <li class="keyboard-button">9</li>
+    <li class="keyboard-button">0</li>
+    <li class="keyboard-button">-</li>
+    <li class="keyboard-button">=</li>
+    <li class="keyboard-button_delete">delete</li>
+  </ul>
+  <ul class="keyboard-row">
+    <li class="keyboard-button_tab">tab</li>
+    <li class="keyboard-button">q</li>
+    <li class="keyboard-button">w</li>
+    <li class="keyboard-button">e</li>
+    <li class="keyboard-button">r</li>
+    <li class="keyboard-button">t</li>
+    <li class="keyboard-button">y</li>
+    <li class="keyboard-button">u</li>
+    <li class="keyboard-button">i</li>
+    <li class="keyboard-button">o</li>
+    <li class="keyboard-button">p</li>
+    <li class="keyboard-button">[</li>
+    <li class="keyboard-button">]</li>
+    <li class="keyboard-button">\</li>
+    </ul>
+    <ul class="keyboard-row">
+    <li class="keyboard-button_big">caps lock</li>
+    <li class="keyboard-button">a</li>
+    <li class="keyboard-button">s</li>
+    <li class="keyboard-button">d</li>
+    <li class="keyboard-button">f</li>
+    <li class="keyboard-button">g</li>
+    <li class="keyboard-button">h</li>
+    <li class="keyboard-button">j</li>
+    <li class="keyboard-button">k</li>
+    <li class="keyboard-button">l</li>
+    <li class="keyboard-button">;</li>
+    <li class="keyboard-button">'</li>
+    <li class="keyboard-button_return">return</li>
+    </ul>
+    <ul class="keyboard-row">
+    <li class="keyboard-button_big">shift</li>
+    <li class="keyboard-button">z</li>
+    <li class="keyboard-button">x</li>
+    <li class="keyboard-button">c</li>
+    <li class="keyboard-button">v</li>
+    <li class="keyboard-button">b</li>
+    <li class="keyboard-button">n</li>
+    <li class="keyboard-button">m</li>
+    <li class="keyboard-button">,</li>
+    <li class="keyboard-button">.</li>
+    <li class="keyboard-button">/</li>
+    <li class="keyboard-button_big">shift</li>
+    </ul>
+    <ul class="keyboard-row">
+    <li class="keyboard-button_space">space</li>
+    </ul>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.20/require.js"></script>
+<script src="/jquery.js"></script>
+<script src="app.js"></script>
+<script>
+ require(['keyboard'], function(keyboard) {
+  keyboard();
+ });
+</script>
   </body>
 </html>

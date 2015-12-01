@@ -1,0 +1,75 @@
+textarea {
+  display: block;
+  width: 900px;
+  height: 300px;
+  background-color: white;
+  border: solid grey 3px;
+  margin: auto;
+
+
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  background-color: grey;
+  margin: auto;
+
+}
+.keyboard-row {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+.keyboard-button{
+  flex: 1;
+  border: solid grey 2px;
+  text-align: center;
+  line-height: 40px;
+  padding: 2px;
+  background-color: white;
+}
+.keyboard-button_big {
+  flex: 2;
+  border: solid grey 2px;
+  text-align: center;
+  line-height: 40px;
+  padding: 2px;
+  background-color: white;
+}
+.keyboard-button_return {
+  flex: 2;
+  border: solid grey 2px;
+  text-align: center;
+  line-height: 40px;
+  padding: 2px;
+  background-color: white;
+}
+.keyboard-button_delete {
+  flex: 2;
+  border: solid grey 2px;
+  text-align: center;
+  line-height: 40px;
+  padding: 2px;
+  background-color: white;
+}
+.keyboard-button_tab {
+  flex: 2;
+  border: solid grey 2px;
+  text-align: center;
+  line-height: 40px;
+  padding: 2px;
+  background-color: white;
+}
+
+
+
+.keyboard-button_space {
+  border: solid grey 2px;
+  text-align: center;
+  line-height: 40px;
+  padding: 2px;
+  width: 900px;
+  background-color: white;
+}
